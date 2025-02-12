@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Sans';
+    src: url('fonts/42dotSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+}
+
+.Project {
+    /* background-color: #ab6b84;  */
+    padding: 20px; 
+    text-align: left; 
+    border-radius: 10px; 
+    color: #292929; 
+    display: inline-block;
+    margin: 20px 0 0 20px;
+    
+}
+
+.Project h1{
+    font-family: 'Sans', sans-serif;
+    font-size: 2.5em;
+}
+
+.p_dec h1{
+    font-family: 'Sans', sans-serif;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.p_dec h2{
+    font-family: 'Sans', sans-serif;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.p_dec p{
+    font-family: 'Sans', sans-serif;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
