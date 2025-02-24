@@ -7,8 +7,9 @@
 .Sprints{
     padding: 20px; 
     border-radius: 10px; 
-    display: inline-block;
-    margin: 20px 0 0 20px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1f));
+    margin: 20px 10px 10px 20px;
 }
 .Sprints h1 {
     color: #292929; 
@@ -20,31 +21,46 @@
 
 .sprint_2 {
     background-color: #ab6b84; 
-    padding: 20px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1f));
+
+    position: relative;
     text-align: left; 
-    border-radius: 4px; 
-    color: #292929; 
-    display: inline-block;
-    margin: 10px 0 0 0px;
+    padding: 20px;
+    border-radius: 4px;   
+    margin-top: 10px;
+    height: auto;
+
 }
 .sprint_2 h2{
-    color: #292929; 
+    color: #292929;     
     text-align: left; 
     font-family: 'Sans', sans-serif;
+    
 }
 
 .sprint_2 p{
     font-family: 'Sans', sans-serif;
     font-size: 1.2em;
     margin-top: 10px;
+
+    
+    
 }
 
 .img_s_2{
     height: auto;
-    width: 500PX;
-    margin-left:auto;
+    width: 500Px;
+
+    position: absolute;
+    right: 0;
+    z-index: 10;
     
+    
+
 }
+    
+/* }
 
 .sprint_3 {
     background-color: #b48a9a; 
@@ -67,4 +83,4 @@
     font-size: 1.2em;
     margin-top: 10px;
     text-align: right; 
-}
+} */

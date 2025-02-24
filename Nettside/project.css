@@ -1,14 +1,22 @@
+/* @font-face {
+    font-family: 'Sans';
+    src: url('fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+} */
+
 @font-face {
     font-family: 'Sans';
-    src: url('fonts/42dotSans-VariableFont_wght.ttf') format('truetype');
+    src: url('fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
     font-weight: 400;
 }
+
 
 .Project {
     background-color: #f5f5f5; 
     color: #292929; 
+    padding: 20px;
 
-    margin-top: 20px; 
+    margin: 20px 10px 10px 10px;
     height: 40vh; 
 
     display: flex;
@@ -20,13 +28,47 @@
     
 }
 
+
 .Project h1{
     font-family: 'Sans', sans-serif;
-    font-size: 2.5em;
+    font-size: 4em;
 
 }
 
-.p_dec h1{
+.Project p{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    font-family: 'Sans', sans-serif;
+    font-size: 1.2em;
+    margin-top: 34px;
+}
+
+.dashed_line {
+
+    border: 0;
+    height: 2px;
+    
+    margin: 20px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    background: repeating-linear-gradient(
+        to right,
+        #292929,
+        #292929 10px, /* Length of the dash */
+        transparent 10px,
+        transparent 20px /* Length of the gap */
+    );   
+
+}
+
+/* .project_desc:hover{
+
+    background-color: #c6b6bc;
+} */
+
+/* .p_dec h1{
     font-family: 'Sans', sans-serif;
     font-size: 1.2em;
     margin-top: 10px;
@@ -42,12 +84,7 @@
     font-family: 'Sans', sans-serif;
     font-size: 1.2em;
     margin-top: 10px;
-}
+} */
 
-.Project img{
-    width: 200px;
-    height: auto;
-    margin-left: 50px;
 
-}
 

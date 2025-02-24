@@ -2,24 +2,31 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
 }
+
+@font-face {
+    font-family: 'Sans';
+    src: url('fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+}
+
 
 
 body {
-    margin: 10px 10px 10px 10px;
+    
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Sans', sans-serif;
     background-color: #ffffff;
 }
-
+/* 
 .header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
     text-align: left;
-}
+    
+} */
 
 .logo_container {
     display: flex;
@@ -47,7 +54,9 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #292929;
-    padding: 10px 0;
+    padding: 20px;
+    
+    margin: 10px 10px 10px 10px;
     gap: 30px;
 }
 
@@ -87,6 +96,8 @@ body {
     display: flex;
     align-items: center;
     margin-right: 20px;
+
+}
 
 .insta_logo {
     height: 40px;

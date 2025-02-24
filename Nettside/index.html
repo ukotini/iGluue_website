@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="sprint.css">
     <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="hardware.css">
+
 </head>
 
 <body>
@@ -41,10 +43,19 @@
     </nav>
 
 
-    <!-- these are supposed to be divs -->
-
     <div id = "Project" class = "Project">
-        <h1>Project Introduction</h1>
+        <div class = "project_desc"> 
+            <h1>Project goal</h1>
+            <p> Provided by Kongsberg Discovery, the goal of the project is to deliver an 
+                automated system for applying two-component adhesives to cermic sonar components. 
+            </p>
+        </div>
+    </div>
+
+    <hr class = "dashed_line">  <!-- the style is in project.css -->
+    
+    <!-- <div id = "Project" class = "Project">
+        <h1>Project</h1>
         <div class = "p_dec">
             <h1>How it is done today: </h1>
                 <p>Kongsberg Discovery are manually manually apllying the glue to the sonar,<br> SY50.  The SY50 is small, only 11-13 mm in diameter
@@ -55,42 +66,53 @@
                 <p>We will develop an automated system for applaying two-component adhesives <br> to cermiac sonar components using ViscoTech. 
                 </p>
         </div>
-    </div>
+    </div> -->
 
     <div id = "Team" class = "Team">
-        <h1>The iGluue team <h1>
-        <img src = "memebers/Magda.png"     alt = "Magda"   class = "mem_pic">
-        <img src = "memebers/Hamsa.png"     alt = "Hamsa"   class = "mem_pic">
-        <img src = "memebers/Rebekka.png"   alt = "Rebekka" class = "mem_pic">
-        <img src = "memebers/Lars.png"      alt = "Lars"    class = "mem_pic">
-        <img src = "memebers/Bjørnar.png"   alt = "Bjørnar" class = "mem_pic">
-        <img src = "memebers/Ole.png"       alt = "Ole"     class = "mem_pic">
-
+        <h1>The iGluue team </h1>
+            <div class = "Images_Members"> 
+                <img src = "memebers/Magda.png"     alt = "Magda"   class = "mem_pic">
+                <img src = "memebers/Hamsa.png"     alt = "Hamsa"   class = "mem_pic">
+                <img src = "memebers/Rebekka.png"   alt = "Rebekka" class = "mem_pic">
+                <img src = "memebers/Lars.png"      alt = "Lars"    class = "mem_pic">
+                <img src = "memebers/Bjørnar.png"   alt = "Bjørnar" class = "mem_pic">
+                <img src = "memebers/Ole.png"       alt = "Ole"     class = "mem_pic">
+            </div>
     </div>
 
     <div id = "Hardware" class = "Hardware">
-        <h1>Our hardware</h1>
+        <h1>Hardware</h1>
         <div class = "hardware_1">
-            <h2>ViscoTech</h2>
-            <p>ViscoTech is a two-component adhesive system. <br> It is used to apply glue to the sonar. <br> 
-                The system is controlled by a PLC. <br> The PLC is programmed in Codesys. <br> 
-                The system is connected to a computer. <br> The computer is programmed in C#.
+            <h2>ViscoTec</h2>
+            <p> We are using a ViscoTec pree-flow eco-DUO 330 as our glue dispenser. <br> 
+                Using this hardware, we will be able to doese extremely small amounts of glue. <br>
+                This is important as the SY50 is very small. The smallest dosing quantity is 0.005ml. <br>
+            
+
+                You can find more information about Viscotec here:
             </p>
+
+            <li class = "vis_link"> 
+                <a href = "https://www.preeflow.com/en/products/2k-dispenser/" target = "_blank"> ViscoTec </a> 
+            </li>
+
+            <img src = "images/preeflow-eco-duo330-1.png" alt = "ViscoTech" class = "img_viscotech">
         </div>
-        <img src = "images/IMG20250124101611.jpg" alt = "ViscoTech" class = "img_viscotech">
+        
     </div>
 
     
     <div id = "Sprints" class = "Sprints">
         <h1>Our spints</h1>
         <div class = "sprint_2">
-            <h2>Sprint 2: 24. Jan - 31. Jan</h2>
-                <p>Our first real sprint. We started scoping our system and set up <br> our scrum system. </p>
+            <h2>Sprint 1: 24. Jan - 31. Jan</h2>
+                <p> Hello </p>
+            <img src = "images/IMG20250124101611.jpg" alt = "sprint_2" class = "img_s_2">
         </div>
-        <img src = "images/IMG20250124101611.jpg" alt = "sprint_2" class = "img_s_2">
+        
 
         <div class = "sprint_3"> 
-            <h2>Sprint 3: 31. Jan - 7.Feb </h2>
+            <h2>Sprint 2: 31. Jan - 7.Feb </h2>
             <p>This was the week we had our first presentation. <br> We finished documenting and delivered it to Karoline. <br>
                 Learned our first important lesson: Always document while working, never the day before.</p>
 
@@ -98,6 +120,6 @@
     </div>
 
 
-    <script src="app.js"></script>
+     <script src="app.js"></script> <!-- for the mobile version -->
 </body>
 </html>
