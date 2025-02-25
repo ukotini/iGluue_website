@@ -17,7 +17,7 @@
     padding: 20px;
 
     margin: 20px 10px 10px 10px;
-    height: 40vh; 
+    height: auto; 
 
     display: flex;
     flex-direction: column;
@@ -30,18 +30,27 @@
 
 
 .Project h1{
+
+    margin-top: 50px;
     font-family: 'Sans', sans-serif;
     font-size: 4em;
 
 }
 
+/* .Project h1::before{
+    content: 'Hello';
+} */
+
 .Project p{
 
+    max-width: 500px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 500px);
+    grid-template-columns: repeat(auto-fill, 1fr);
     font-family: 'Sans', sans-serif;
     font-size: 1.2em;
     margin-top: 34px;
+
+    margin-bottom: 50px;
 }
 
 .dashed_line {

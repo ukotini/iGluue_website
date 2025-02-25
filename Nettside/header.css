@@ -13,20 +13,21 @@
 
 
 body {
-    
     padding: 0;
     font-family: 'Sans', sans-serif;
     background-color: #ffffff;
 }
-/* 
-.header {
+
+.navbar {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    background-color: #292929;
     padding: 20px;
-    text-align: left;
     
-} */
+    margin: 10px 10px 10px 10px;
+}
+
 
 .logo_container {
     display: flex;
@@ -38,7 +39,6 @@ body {
 .logo {
     height: 100px;
     margin-right: 50px;
-    border-radius: 50%;
     object-fit: cover;
 }
 
@@ -49,16 +49,7 @@ body {
     margin-right: 20px;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #292929;
-    padding: 20px;
-    
-    margin: 10px 10px 10px 10px;
-    gap: 30px;
-}
+
 
 .navbar__menu{
     display: flex;
@@ -74,10 +65,13 @@ body {
 
 .navbar__links{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    padding: 0 3rem;
+    /* padding: 0 3rem; */
+    padding: 10px;
     font-weight: bold;
+    margin-right: 30px;
+
 }
 .navbar a {
     text-decoration: none;
@@ -85,10 +79,28 @@ body {
     color: #fff;
     font-weight: bold;
     transition: color 0.3s ease;
+
+    position: relative;
+    width: max-content;
 }
 
 .navbar a:hover {
     color: #774f86;
+}
+
+.navbar a:hover::after{
+
+    content: '';
+
+    background: linear-gradient(to right, #774f86, #ab6b84);
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: 0.3s ease-in-out;
+    
 }
 
 .insta__link {
@@ -101,5 +113,19 @@ body {
 
 .insta_logo {
     height: 40px;
-    width: 50PX;
+    width: auto;
+}
+
+.hamburger {
+    margin-left: auto; 
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #292929;
+
+}
+
+.mobile_menu {
+    height: 40px;
+    width: auto;
 }
