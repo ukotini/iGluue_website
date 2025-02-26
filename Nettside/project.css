@@ -44,13 +44,15 @@
 .Project p{
 
     max-width: 500px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 1fr);
+
     font-family: 'Sans', sans-serif;
     font-size: 1.2em;
     margin-top: 34px;
 
     margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
 }
 
 .dashed_line {
